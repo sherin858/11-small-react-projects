@@ -3,7 +3,6 @@ body {
   font-family: 'Handlee','Red Hat Mono', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
 }
 
 code {
@@ -13,9 +12,10 @@ code {
 
 .tour{
   background-color: white;
-  padding: 0px;
+  padding:0px;
   border-radius:0.25rem;
   text-align: start;
+  min-width: 600px;
 }
 img{
   width: 100%;
@@ -31,5 +31,12 @@ img{
   height:0.25rem;
   width:6rem;
   background-color: hsl(205, 78%, 60%);
-
 }
+.price{
+  background-color: hsl(205, 100%, 96%);
+  color: hsl(205, 78%, 60%);
+}
+.btn-link{
+  color:hsl(205, 78%, 60%)!important;
+}
+
