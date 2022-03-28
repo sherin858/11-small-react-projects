@@ -1,0 +1,126 @@
+html{
+  height: 100%;
+}
+*{
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Handlee','Red Hat Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+  width: 100vw;
+
+}
+:root{
+  --main-color:#49a6e9;
+  --main-color4:#8bcbf9;
+  --main-color3:#ebf7ff;
+  --main-color2:#102a42;
+  --info:#617d98;
+  --transition:all 1s;
+}
+.line{
+  width:6rem;
+  height: 0.25rem;
+  background-color: var(--main-color);
+  margin: 0 auto;
+}
+.title{
+  color: var(--main-color2);
+  font-weight: bold;
+}
+@media (min-width:768px){
+  .App{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 60vw;
+  }
+} 
+.App{
+  max-height: 100vh;
+  line-height: 1.25rem;
+  padding-top: 1rem;
+}
+img{
+  height:150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.reviewCard{
+  background-color: white;
+  border-radius: 0.5rem;
+}
+.reviewCard h4{
+  color: var(--main-color2);
+}
+.reviewCard p:first-of-type{
+  color: var(--main-color);
+}
+.reviewCard p{
+  color: #617d98;
+}
+.image span{
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: #49a6e9;
+  border-radius: 50%;
+  z-index: 2;
+  transform: translateY(50%);
+  top: 0;
+  left: 0;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image{
+  position: relative;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+img{
+  position: relative;
+  z-index: 1;
+}
+.image::after{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #49a6e9;
+  top: -0.25rem;
+  left: 0;
+  border-radius: 50%;
+  left: 0.5rem;
+}
+.arrowbtn{
+  background-color:transparent;
+  border-color: transparent;
+  color:var(--main-color4);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.arrowbtn:hover{
+  color:var(--main-color);
+  transition: var(--transition);
+}
+.surprisebtn{
+  display: block;
+  margin: 0 auto;
+  background-color: var(--main-color3);
+  color: var(--main-color);
+  border: transparent;
+  border-radius: 0.25rem;
+}
+.surprisebtn:hover{
+  color: white;
+  background-color: var(--main-color);
+  transition: var(--transition);
+}
