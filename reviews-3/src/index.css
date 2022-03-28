@@ -9,8 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
-  width: 100vw;
-
 }
 :root{
   --main-color:#49a6e9;
@@ -40,7 +38,6 @@ body {
   }
 } 
 .App{
-  max-height: 100vh;
   line-height: 1.25rem;
   padding-top: 1rem;
 }
