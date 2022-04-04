@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  font-family: 'Handlee','Red Hat Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-background);
+}
+:root{
+  --main-color:#2caeba;
+  --main-color2:#102a42;
+  --company-background:#dae2ec;
+  --company-color:#617d98;
+  --body-background:#f1f5f8;
+  --date:#737d98;
+  --duty:#444d67;
+  --info-btn:#88ebf2;
+}
+*,::before,::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.line{
+  height: 0.25rem;
+  width: 4rem;
+  margin: 0 auto;
+  background-color: var(--main-color);
+}
+.title h1{
+  text-align: center;
+  margin:2rem 0 0.5rem 0;
+  color: var(--main-color2);
+}
+.loading{
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.content-control{
+  display: flex;
+  flex-direction: row;
+  width: 60vw;
+  margin: 4rem auto;
+  gap: 2rem;
+
+}
+.buttons-container{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 2rem;
+}
+.buttons-container button{
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 1.25rem;
+  transition: all linear 0.3s;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.company{
+  background-color: var(--company-background);
+  width: fit-content;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  color:var(--company-color);
+}
+.date{
+  color:var(--date) ;
+}
+.duty{
+  color: var(--duty);
+}
+.active{
+  color: var(--main-color);
+  box-shadow: -0.25rem 0 var(--main-color);
+}
+.buttons-container button:hover{
+  box-shadow: -0.25rem 0 var(--main-color);
+  color: var(--main-color);
+}
+.info-btn{
+  margin: 0 auto;
+  display: block;
+  width: fit-content;
+  padding: 0.25rem 2rem 0.25rem 2rem;
+  background-color: var(--main-color);
+  border-color: transparent;
+  border-radius: 0.25rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all  0.3s linear;
+}
+.info-btn:hover{
+  background-color:var(--info-btn);
+}
+@media (max-width:767px){
+  .buttons-container{
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 3rem;
+  }
+  .content-control{
+    width:90vw;
+    display: block;
+  }
+  .active{
+    box-shadow: 0 0.25rem var(--main-color);
+    color: var(--main-color);
+  }
+  .buttons-container button:hover{
+    box-shadow: 0 0.25rem var(--main-color);
+    color: var(--main-color);
+  }
+}
