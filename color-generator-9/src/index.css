@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: 'Handlee','Red Hat Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--body-background);
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  --body-background:#f1f5f8;
+  --btn:#49a6e9;
+  --warning:#bb2525;
+  --copied:#747d98;
+}
+.container{
+  display:flex;
+  align-items:center;
+  gap: 0.5rem;
+  padding-left: 2rem;
+  height: 100px;
+}
+button{
+  background-color: var(--btn);
+  border-color: transparent;
+  border-radius: 0 .25rem .25rem 0;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input{
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-color: transparent;
+}
+h2{
+  text-transform: capitalize;
+}
+.colors-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+  grid-template-rows:repeat(auto-fit,minmax(100px,1fr));
+  min-height: calc(100vh - 100px);
+  grid-auto-rows: minmax(100px,1fr);
+}
+.single-color{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.lighter-font{
+  color:white
+}
+.warning{
+  border: 2px solid var(--warning);
+}
+.copied{
+  color:var(--copied);
+}
+@media (max-width:767px){
+  .container{
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+}
