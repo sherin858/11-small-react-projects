@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Handlee','Red Hat Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+:root{
+  --background-color:#f1f5f8;
+  --btn:#a5d5f8;
+  --btn-hover:#49a6e9;
+  --delete:#e66b6b;
+  --edit:#6be675;
+  --editAlert:#d4edda;
+  --removeAlert:#f8d7da;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  margin-top: 5rem;
+  background-color: white;
+  width:95vw;
+  max-width: 500px;
+  padding: 2rem ;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+input{
+  border-color: transparent;
+  line-height: 1.5;
+  padding:0.25rem 1rem;
+  border-radius: 0.25rem 0px 0px 0.25rem;
+  background-color: var(--background-color);
+  flex-grow: 1;
+}
+.submit-btn{
+  border-color: transparent;
+  line-height: 1.5;
+  padding: 0.25rem 1rem;
+  border-radius: 0px 0.25rem 0.25rem 0px;
+  background-color: var(--btn);
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.submit-btn:hover{
+  background-color: var(--btn-hover);
+}
+h2{
+  margin-bottom: 1rem;
+}
+form{
+  display: flex;
+}
+.item{
+  display: flex;
+  justify-content: space-between;
+  padding:0.25rem 1rem;
+}
+.items-container{
+  margin-top: 1rem;
+}
+.edit,.delete{
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.edit{
+  color:var(--edit);
+}
+.delete{
+  color: var(--delete);
+}
+.buttons-container{
+  display: flex;
+  gap:0.25rem
+}
+.editAlert{
+  background-color: var(--editAlert);
+}
+.deleteAlert{
+  background-color: var(--removeAlert);
+}
+.Alert{
+  border-color: var(--delete);
+}
